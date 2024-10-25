@@ -6,12 +6,10 @@
     <title>KA Studio</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="js/script.js"></script> 
 </head>
-<body>
 
-
-      <div class="container-fluid g-0 position-relative">
+<header>
+    <div class="container-fluid g-0 position-relative">
             <nav class="w-100 navbar navbar-expand-lg  my-background-color position-absolute top-0 start-50 translate-middle-x p-4">
                 <div class="container-fluid">
                     <a class="navbar-brand text-white" href="#">KA Studio</a>
@@ -29,35 +27,39 @@
                         </li>
                         <li class="nav-item dropdown x-2 ">
                             <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
+                                Dropdown
                             </a>
                             <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item x-2 ">
+                                <a class="nav-link text-white" href="#">Link</a>
+                            </li>
+                            <li class="nav-item x-2 ">
+                                <a class="nav-link disabled text-white" aria-disabled="true">Disabled</a>
+                            </li>
                             </ul>
-                        </li>
-                        <li class="nav-item x-2 ">
-                            <a class="nav-link text-white" href="#">Link</a>
-                        </li>
-                        <li class="nav-item x-2 ">
-                            <a class="nav-link disabled text-white" aria-disabled="true">Disabled</a>
-                        </li>
-                        </ul>
-                        <form class="d-flex" role="search">
-                        <input class="form-control me-2 rounded-pill bg-success text-white bg-opacity-25" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success rounded-pill" type="submit">Search</button>
-                        </form>
-                    </div>
+                            <form class="d-flex" role="search">
+                            <input class="form-control me-2 rounded-pill bg-success text-white bg-opacity-25" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success rounded-pill" type="submit">Search</button>
+                            </form>
+                        </div>
                 </div>
             </nav>
-            <img src="https://picsum.photos/1920/1080?grayscale" alt="" class="img-fluid">
-        
-            <h1 class="position-absolute top-50 start-50 translate-middle text-white">Your vision, our passion.
-                Partnering for design excellence.
-            </h1>        
-      </div>
+            <img src="assets\img\Brutalismo-17.jpg" alt="" class="img-fluid">
+
+            <div><span id="element"></span></div>
+    </div>   
+</header>
+
+<body>
+
+
+    
 
     <main>
         <div class="grid-wrapper">
@@ -189,5 +191,7 @@
 
 <!-- Script boostrap -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="js\script.js"></script>
 
 </html>
