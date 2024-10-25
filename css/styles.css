@@ -1,15 +1,32 @@
+:root {
+    --primary: #c7febc;
+    --primaryDark: #6c9265;
+    --secondary: #2d2d2d;
+    --secondaryLight: #909090;
+    --headerColor: #1a1a1a;
+    --bodyTextColor: #4e4b66;
+    --bodyTextColorWhite: #fafbfc;
+    /* 13px - 16px */
+    --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+    /* 31px - 49px */
+    --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+    --bodyFontSize: 1rem;
+    /* 60px - 100px top and bottom */
+    --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+}
+
 html {
     ::-webkit-scrollbar {
         width: 15px;
     }
     ::-webkit-scrollbar-track {
-        background-color: rgb(56, 56, 56);
+        background-color: var(--secondary);
     }
     
     ::-webkit-scrollbar-thumb  {
-        background-color: rgb(184, 250, 206);
+        background-color: var(--primary);
         border-radius: 10px;
-        border: 2px rgb(107, 148, 107) solid;
+        border: var(--primaryDark) solid;
     }
     
 }
@@ -39,6 +56,14 @@ img {
     vertical-align: middle;
     display: inline-block;
 }
+
+.btn-navbar:hover {
+    border: 1px var(--primary) solid;
+    border-radius: 2rem;
+    transition: 0.7s;
+    
+}
+
 
 .grid-wrapper {
     padding: 1rem 0;
