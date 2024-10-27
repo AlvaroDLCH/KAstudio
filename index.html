@@ -6,62 +6,84 @@
     <title>KA Studio</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href="assets/img/Logo_KAstudio_claro.svg" rel="icon" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
-<header class="header">
-    <div class="container-fluid g-0 position-relative">
-            <nav class="w-100 navbar navbar-expand-lg  my-background-color position-absolute top-0 start-50 translate-middle-x p-4">
-                <div class="container-fluid">
-                    <a class="navbar-brand text-white" href="#">KA Studio</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-                        <li class="btn-navbar nav-item x-2 ">
-                            <a class="nav-link text-white" href="#">Link</a>
-                        </li>
-                        <li class="btn-navbar nav-item x-2 ">
-                            <a class="nav-link text-white" href="#">Link</a>
-                        </li>
-                        <li class="btn-navbar nav-item dropdown x-2 ">
-                            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="btn-navbar nav-item x-2 ">
-                            <a class="nav-link text-white" href="#">Link</a>
-                        </li>
-                        <li class="btn-navbar nav-item x-2 ">
-                            <a class="nav-link disabled text-white" aria-disabled="true">Disabled</a>
-                        </li>
-                        </ul>
-                        <form class="d-flex" role="search">
-                        <input class="form-control me-2 rounded-pill bg-success text-white bg-opacity-25" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success rounded-pill" type="submit">Search</button>
-                        </form>
-                    </div>
-                </div>
-            </nav>
-            <div class="imgfondodiv">
-                <img src="assets\img\Brutalismo-17.jpg" alt="" class="imgfondo">
-            </div>
-
-            <div class="typed_text" ><span id="element"></span></div>
-    </div>   
-</header>
-
 <body class="body">
+    <header class="header">
+        <div class="container-fluid g-0 position-relative">
+                <nav class="w-100 navbar navbar-expand-lg  my-background-color position-absolute top-0 start-50 translate-middle-x p-4">
+                    <div class="container-fluid">
+                        <a class="navbar-brand text-white" href="#">KA Studio</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                            <li class="btn-navbar nav-item x-2 ">
+                                <a class="nav-link text-white" href="#">Link</a>
+                            </li>
+                            <li class="btn-navbar nav-item x-2 ">
+                                <a class="nav-link text-white" href="#">Link</a>
+                            </li>
+                            <li class="btn-navbar nav-item dropdown x-2 ">
+                                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="btn-navbar nav-item x-2 ">
+                                <a class="nav-link text-white" href="#">Link</a>
+                            </li>
+                            <li class="btn-navbar nav-item x-2 ">
+                                <a class="nav-link disabled text-white" aria-disabled="true">Disabled</a>
+                            </li>
+                            </ul>
+                            <form class="d-flex" role="search">
+                            <input class="form-control me-2 rounded-pill bg-success text-white bg-opacity-25" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success rounded-pill" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+                <div class="imgfondodiv">
+                    <img src="assets\img\Brutalismo-17.jpg" alt="" class="imgfondo">
+                </div>
+
+                <div class="typed_text" ><span id="element"></span></div>
+        </div>   
+    </header>
 
     <main>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+        <button class="btn-modal" onclick="openModal()">Contact</button>
+
+        <div id="modalWindow">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Modal Window</h2>
+                <p>
+                    This is a modal window. You can close it by clicking on the close button or
+                    outside the modal.
+                </p>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem
+                    nulla quae reiciendis reprehenderit quam, consequuntur ea modi cum excepturi
+                    doloremque, quia magnam accusamus odit commodi debitis voluptatibus
+                    perferendis recusandae amet!
+                </p>
+                <button>Accept</button>
+            </div>
+        </div>
+
 
         <!-- featured section  -->
 
@@ -87,10 +109,52 @@
             </div>
         </section>
 
+        <!-- ============================================ -->
+        <!--                 intro                        -->
+        <!-- ============================================ -->
+
+        <section id="why-choose">
+            <div class="intro-container">
+                <div class="intro-content">
+                    <div class="intro-flex">
+                        <span class="intro-topper">Our Process</span>
+                        <h2 class="intro-title">Why You Need the Top Designers in KA Studio</h2>
+                    </div>
+                    <p class="intro-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+                    </p>
+                </div>
+                <ul class="intro-card-group">
+                    <li class="intro-item">
+                        <img class="intro-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/award.svg" alt="icon" width="48" height="48">
+                        <h3 class="intro-h3">Effective communication</h3>
+                        <p class="intro-item-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea                        
+                        </p>
+                    </li>
+                    <li class="intro-item">
+                        <img class="intro-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/sheild-black.svg" alt="icon" width="40" height="48">
+                        <h3 class="intro-h3">Expert consulting</h3>
+                        <p class="intro-item-text">
+                            Full range of shipping disputes such as charter party disputes, demurrage claims, purchase agreements, trade finance, carriage and claims.
+                        </p>
+                    </li>
+                    <li class="intro-item">
+                        <img class="intro-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/call.svg" alt="icon" width="48" height="48">
+                        <h3 class="intro-h3">Full time support</h3>
+                        <p class="intro-item-text">
+                            Full range of shipping disputes such as charter party disputes, demurrage claims, purchase agreements, trade finance, carriage and claims.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+                                
+
 
         <!-- Galeria de imagenes -->
-
-        <div class="grid-wrapper">
+         <section class="Galeria">
+            <div class="grid-wrapper">
             <div class="tall">
                 <img
                     src="assets\img\Brutalismo-30.jpg"
@@ -173,8 +237,106 @@
                     src="https://images.unsplash.com/photo-1587897773780-fe72528d5081?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1489&amp;q=80"
                     alt="" />
             </div>
-   
+         </section>
+
+        
+    <!-- ============================================ -->
+    <!--                   Carousel                    -->
+    <!-- ============================================ -->
+    <div id="carouselExampleCaptions" class="carousel slide carousel-container" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/img/Brutalismo-17.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/Brutalismo-17.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/Brutalismo-17.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+   
+
+
+    <!-- ============================================ -->
+    <!--                   Contact                    -->
+    <!-- ============================================ -->
+
+    <section id="contact">
+        <div class="container">
+            <div class="form-group">
+                <div class="content">
+                    <span class="topper">Get in Touch</span>
+                    <h2 class="title">Contáctanos</h2>
+                </div>
+                <!--Form-->
+                <form class="form" id="form" name="Contact Form" method="post">
+                    <label class="label">
+                        Nombre*
+                        <input class="input" required type="text" id="name" name="name" placeholder="John Doe">
+                    </label>
+                    <label class="label email">
+                        Email*
+                        <input class="input" required type="email" id="email" name="email" placeholder="name@company.com">
+                    </label>
+                    <label class="label phone">
+                        Tlf*
+                        <input class="input" required type="phone" id="phone" name="phone" placeholder="+1 (206) 987-6543">
+                    </label>
+                    <label class="label">
+                        Mensaje*
+                        <textarea class="input textarea" required name="Message" id="message" placeholder="Hello, I am interested..."></textarea>
+                    </label>
+                    <button class="button-solid submit" type="submit">Send Message</button>
+                </form>
+            </div>
+            <!--Contact Info-->
+            <div class="info-group">
+                <div class="info">
+                    <span class="topper">Dónde</span>
+                    <span class="detail">Av. de Alfonso XIII, 97, Chamartín,<br> 28016 Madrid</span>
+                </div>
+                <div class="info">
+                    <span class="topper">Contact</span>
+                    <span class="detail">M: +34 640 720 929</span>
+                    <span class="detail">E: ka.studio@gmail.com</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="picture-group">
+            <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2085.5505701581433!2d-3.6682593482898076!3d40.4567087144317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42292a2a67e76f%3A0x7661d685faad2ff8!2sUDIT%20-%20Universidad%20de%20Dise%C3%B1o%2C%20Innovaci%C3%B3n%20y%20Tecnolog%C3%ADa!5e0!3m2!1sen!2ses!4v1730045705585!5m2!1sen!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+    </section>
+                                
         
     </main>
     <footer class="bg-dark text-white py-4">
@@ -219,6 +381,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="js\script.js"></script>
 
 </html>
