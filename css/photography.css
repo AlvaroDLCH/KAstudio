@@ -47,19 +47,19 @@ html {
 .section-title {
     font-size: 2rem;
     font-weight: bold;
-    color: var(--bodyTextColorWhite);
+    color: var(--primary);
 }
   
 .title {
     font-size: 1.5rem;
     font-weight: bold;
-    color: var(--bodyTextColor);
+    color: var(--primary);
 }
   
 .description {
     font-size: 1rem;
     line-height: 1.6;
-    color: var(--bodyTextColor);
+    color: var(--bodyTextColorWhite);
 }
   
 .card-img-top {
@@ -75,6 +75,11 @@ html {
 .card {
     position: relative;
     overflow: hidden;
+    border: 0.15em solid var(--primary);
+}
+
+.card-body {
+    background-color: var(--headerColor);
 }
 
 .card:hover .overlay {
@@ -118,4 +123,11 @@ html {
     background-color: transparent;
     color: var(--bodyTextColorWhite);
     border: 0.15em solid var(--primary);
+}
+
+
+.footer-top-line {
+    height: 0.15em;
+    background-color: var(--primary);
+    width: 100%;
 }
