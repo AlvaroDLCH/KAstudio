@@ -44,6 +44,66 @@ html {
     background-color: var(--headerColor);
 }
 
+/* breadcrumb */
+
+.breadcrumb-nav {
+    background-color: var(--headerColor);
+    padding-top: 1rem;
+}
+
+.breadcrumb-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.breadcrumb-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--bodyTextColorWhite);
+    font-size: 1.2rem;
+}
+
+.breadcrumb-item a {
+    color: var(--bodyTextColorWhite);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb-item a:hover {
+    color: var(--primary);
+}
+
+.breadcrumb-item .separator {
+    color: var(--bodyTextColorWhite);
+    font-size: 1.2rem;
+    margin: 0 0.5rem;
+}
+
+.breadcrumb-current {
+    color: var(--primary) !important;
+}
+
+@media (max-width: 768px) {
+    .breadcrumb-item {
+        font-size: 1rem;
+    }
+    
+    .breadcrumb-item .separator {
+        font-size: 1rem;
+        margin: 0 0.3rem;
+    }
+}
+
+.my-5 {
+    margin-top: 2rem !important;
+    margin-bottom: 3rem !important;
+}
+
 .section-title {
     font-size: 2rem;
     font-weight: bold;
@@ -126,8 +186,47 @@ html {
 }
 
 
+
 .footer-top-line {
     height: 0.15em;
     background-color: var(--primary);
     width: 100%;
 }
+
+@media (max-width: 768px) {
+    .card .overlay {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        padding: 1rem; 
+    }
+
+    .card .overlay button {
+        position: static;
+        transform: none;
+        opacity: 1;
+        background-color: var(--primary);
+        color: var(--bodyTextColor);
+        margin: 0;
+    }
+
+}
+
+/* @media (max-width: 768px) {
+    .card .overlay {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        padding: 1rem;
+    }
+
+    .card .overlay button {
+        position: static;
+        transform: none;
+        opacity: 1;
+        background-color: var(--primary);
+        color: var(--bodyTextColor);
+        margin-top: 0.5rem; 
+    }
+
+} */

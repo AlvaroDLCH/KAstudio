@@ -219,6 +219,7 @@ img {
 }
 
 /* Ajustes en dispositivos pequeños */
+
 @media (max-width: 768px) {
     .section-featured h2 {
         font-size: 1.25rem;
@@ -226,6 +227,8 @@ img {
     .featured-button {
         padding: 0.4rem 1rem;
         font-size: 0.9rem;
+        display: block; /* Esto hace que los botones sean visibles */
+        opacity: 1; /* Asegura que sean completamente visibles */
     }
 }
 
@@ -281,10 +284,14 @@ img {
 
 
 @media screen and (max-width: 768px) {
-    .grid-wrapper > div {
-        grid-column: span 2;
-        grid-row: span 2;
-    }
+  .grid-wrapper > div {
+    grid-column: span 2;
+     grid-row: span 2;
+  }
+
+  .grid-wrapper {
+    padding: 2em;
+  }
 }
 
 /*Carousel*/
