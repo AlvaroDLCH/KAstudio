@@ -1,4 +1,3 @@
-
 :root {
     --primary: #c7febc;
     --primaryDark: #6c9265;
@@ -10,26 +9,27 @@
     /* 13px - 16px */
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
     /* 31px - 49px */
-    --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+    --headerFontSize: clamp(1.9rem, 3.9vw, 3.1rem);
     --bodyFontSize: 1rem;
     /* 60px - 100px top and bottom */
     --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
-}
-
-html {
+  }
+  
+  html {
     ::-webkit-scrollbar {
-        width: 15px;
+      width: 15px;
     }
     ::-webkit-scrollbar-track {
-        background-color: var(--secondary);
+      background-color: var(--secondary);
     }
-    
+      
     ::-webkit-scrollbar-thumb  {
-        background-color: var(--primary);
-        border-radius: 10px;
-        border: var(--primaryDark) solid;
+      background-color: var(--primary);
+      border-radius: 10px;
+      border: var(--primaryDark) solid;
     }
-}
+       
+  }
 
 
 * {
@@ -113,11 +113,11 @@ html {
 }
 
 .main-image-container {
-    margin-bottom: 2em;
+    margin-bottom: 2rem;
     border-radius: 0.5em;
     overflow: hidden;
     width: 100%;
-    height: 500px; /* Altura ajustada para un formato horizontal */
+    height: 500px; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -140,7 +140,7 @@ html {
 .gallery-item {
     aspect-ratio: 3/4;
     overflow: hidden;
-    border-radius: 0.5em;
+    border-radius: 0.5rem;
     transition: transform 0.3s ease;
     border: 0.15em solid var(--primary);
 }
@@ -153,13 +153,13 @@ html {
 
 .description {
     color: var(--bodyTextColorWhite);
-    padding: 1em;
-    border-radius: 0.5em;
-    margin-top: 2em;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
 }
 
 .footer-top-line {
-    height: 0.15em;
+    height: 0.15rem;
     background-color: var(--primary);
     width: 100%;
 }

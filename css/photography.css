@@ -1,4 +1,3 @@
-
 :root {
     --primary: #c7febc;
     --primaryDark: #6c9265;
@@ -10,27 +9,27 @@
     /* 13px - 16px */
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
     /* 31px - 49px */
-    --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+    --headerFontSize: clamp(1.9rem, 3.9vw, 3.1rem);
     --bodyFontSize: 1rem;
     /* 60px - 100px top and bottom */
     --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
-}
-
-html {
+  }
+  
+  html {
     ::-webkit-scrollbar {
-        width: 15px;
+      width: 15px;
     }
     ::-webkit-scrollbar-track {
-        background-color: var(--secondary);
+      background-color: var(--secondary);
     }
-    
+      
     ::-webkit-scrollbar-thumb  {
-        background-color: var(--primary);
-        border-radius: 10px;
-        border: var(--primaryDark) solid;
+      background-color: var(--primary);
+      border-radius: 10px;
+      border: var(--primaryDark) solid;
     }
-    
-}
+       
+  }
 
 
 * {
@@ -124,7 +123,7 @@ html {
   
 .card-img-top {
     width: 100%; 
-    height: 20em; 
+    height: 20rem; 
     object-fit: cover; 
 }
 
@@ -135,7 +134,7 @@ html {
 .card {
     position: relative;
     overflow: hidden;
-    border: 0.15em solid var(--primary);
+    border: 0.15rem solid var(--primary);
 }
 
 .card-body {
@@ -182,13 +181,13 @@ html {
 .card .overlay button:hover {
     background-color: transparent;
     color: var(--bodyTextColorWhite);
-    border: 0.15em solid var(--primary);
+    border: 0.15rem solid var(--primary);
 }
 
 
 
 .footer-top-line {
-    height: 0.15em;
+    height: 0.15rem;
     background-color: var(--primary);
     width: 100%;
 }
