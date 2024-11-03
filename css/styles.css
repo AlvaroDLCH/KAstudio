@@ -829,10 +829,11 @@ img {
 
 #modalWindow .modal-content {
     color: var(--text-light);
-    background-color: var(--primary);
+    background-color: #1a1a1a83;
     margin: 15% auto;
     padding: 20px;
     border: 1px solid var(--primaryDark);
+    backdrop-filter: blur(10px);
 
     max-width: 564px;
     border-radius: 10px;
@@ -846,10 +847,36 @@ img {
 
 #modalWindow .modal-content h2 {
     font-size: 2rem;
+    color: var(--primary);
 }
-
+#modalWindow .modal-content label {
+  color: var(--primary);
+  margin: 1rem;
+}
+#modalWindow .modal-content input {
+  border-radius: 2rem;
+  border: 1px var(--primary) solid;
+  background-color: var(--secondary);
+}
+#modalWindow .modal-content input::placeholder {
+  color: var(--primaryDark);
+}
+#modalWindow .modal-content .button-submit {
+  margin: 1rem 0 0;
+  padding: 1rem;
+  color: var(--primary);
+  justify-self: flex-start;
+  background-color: var(--headerColor);
+  border-radius: 2rem;
+  border: 1px var(--primary) solid;
+}
+#modalWindow .modal-content .button-submit:hover {
+  background-color: var(--primary);
+  color: var(--headerColor);
+  transition: 0.5s;
+}
 #modalWindow .modal-content .close {
-    color: var(--accent-color);
+    color: var(--primary);
     font-size: 2rem;
     font-weight: bold;
     align-self: flex-end;
