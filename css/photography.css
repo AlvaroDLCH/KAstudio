@@ -43,11 +43,115 @@ html {
     background-color: var(--headerColor);
 }
 
+.btn-contact {
+    color: var(--primary) !important;
+    border-radius: 2rem !important;
+    border: 1px var(--primary) solid !important;
+    position: absolute;
+    top: 40px; 
+    right: 30px; 
+}
+  
+.btn-contact:hover {
+    color: var(--secondary)!important;
+    background-color: var(--primary);
+    transition: 0.5s;
+
+}
+.btn-navbar {
+    padding: 0.5rem;
+}
+.btn-navbar:hover {
+    border: 1px var(--primary) solid;
+    border-radius: 2rem;
+    transition: 0.7s;
+}
+
+
+  
+  #modalWindow {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.75);
+      opacity: 0;
+  
+      /* Esto permite animar la propiedad display de none a block */
+      transition: all 0.3s ease-in-out;
+      transition-behavior: allow-discrete;
+  }
+  
+  #modalWindow.show-modal {
+      display: block;
+      opacity: 1;
+  }
+  
+  #modalWindow .modal-content {
+      color: var(--text-light);
+      background-color: var(--primary);
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid var(--primaryDark);
+  
+      max-width: 564px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 1.4rem;
+  }
+  
+  #modalWindow .modal-content h2 {
+      font-size: 2rem;
+  }
+  
+  #modalWindow .modal-content .close {
+      color: var(--accent-color);
+      font-size: 2rem;
+      font-weight: bold;
+      align-self: flex-end;
+      cursor: pointer;
+      margin-right: 10px;
+  }
+
+
+  
+#navigation .logo {
+    width: 40%;
+    max-width: 9.125rem;
+    height: 100%;
+    margin: 0 auto 0 0;
+    /* prevents padding and border from affecting height and width */
+    box-sizing: border-box;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+#navigation .logo img {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+  
+    /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
+    object-fit: contain;
+  }
+
 /* breadcrumb */
 
 .breadcrumb-nav {
     background-color: var(--headerColor);
-    padding-top: 1rem;
+    padding-top: 6rem;
+    padding-left: 7.5rem;
+    
 }
 
 .breadcrumb-list {
