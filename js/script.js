@@ -27,9 +27,9 @@ function topFunction() {
 }
 
 // CONTACT BTN
-const btnContact = document.querySelector(".btn-modal");
+const btnContact = document.querySelector("#page-btn2 .btn-modal");
         //console.log(btnModal);
-        btnModal.addEventListener("click", openModal);
+        btnContact.addEventListener("click", openModal);
 
         //declaramos funcion open modal
         function openModal() {
