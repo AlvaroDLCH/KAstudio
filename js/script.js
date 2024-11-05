@@ -58,74 +58,40 @@ const btnContact = document.querySelector("#page-btn2 .btn-modal");
 
         });
 
-// LOCOMOTIVE SCROLL
-const body = document.body;
-const backToTop = document.querySelector(".back-to-top");
-const opacityClass = "opacity-0";
-const visibilityClass = "invisible";
+// Custom cursor
 
-const scroll = new LocomotiveScroll({
-  el: document.querySelector("[data-scroll-container]"),
-  smooth: true,
-  tablet: { smooth: true },
-  smartphone: { smooth: true }
+var cursor = document.querySelector('.cursor');
+var cursorinner = document.querySelector('.cursor2');
+var a = document.querySelectorAll('a');
+
+document.addEventListener('mousemove', function(e){
+  var x = e.clientX;
+  var y = e.clientY;
+  cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`
 });
 
-const arrayOfColors = [
-  "#0a9396",
-  "#005f73",
-  "#ae2012",
-  "#3d405b",
-  "#003049",
-  "#bc6c25",
-  "#ff006e",
-  "#ef476f",
-  "#1982c4",
-  "#ee964b",
-  "#0ead69",
-  "#390099",
-  "#f6aa1c",
-  "#54101d",
-  "#2b2c28",
-  "#85c7f2",
-  "#e15a97",
-  "#2b70e3",
-  "#b36a5e"
-];
-
-function getRandomColor() {
-  const arrayLength = arrayOfColors.length;
-  const randomValue = Math.random() * arrayLength;
-  const roundedNumber = Math.floor(randomValue);
-  const color = arrayOfColors[roundedNumber];
-  return color;
-}
-
-scroll.on("call", (value, way, obj) => {
-  if (value === "randomizeTextColor") {
-    if (way === "enter") {
-      obj.el.style.color = getRandomColor();
-    }
-  } else if (value === "toggleBackToTop") {
-    if (way === "enter") {
-      backToTop.classList.add(opacityClass, visibilityClass);
-    } else {
-      backToTop.classList.remove(opacityClass, visibilityClass);
-    }
-  }
+document.addEventListener('mousemove', function(e){
+  var x = e.clientX;
+  var y = e.clientY;
+  cursorinner.style.left = x + 'px';
+  cursorinner.style.top = y + 'px';
 });
 
-scroll.on("scroll", (instance) => {
-  const visibleSubSectionHeading = document.querySelector(
-    ".sub-section h2.is-inview"
-  );
-
-  if (visibleSubSectionHeading) {
-    const parentSection = visibleSubSectionHeading.parentElement.parentElement;
-    body.style.backgroundColor = parentSection.dataset.bgColor;
-  } else {
-    body.style.backgroundColor = "";
-  }
+document.addEventListener('mousedown', function(){
+  cursor.classList.add('click');
+  cursorinner.classList.add('cursorinnerhover')
 });
 
-  
+document.addEventListener('mouseup', function(){
+  cursor.classList.remove('click')
+  cursorinner.classList.remove('cursorinnerhover')
+});
+
+a.forEach(item => {
+  item.addEventListener('mouseover', () => {
+    cursor.classList.add('hover');
+  });
+  item.addEventListener('mouseleave', () => {
+    cursor.classList.remove('hover');
+  });
+})
