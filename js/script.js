@@ -21,12 +21,15 @@ function scrollFunction() {
 }
 
 // When the user clicks on the button, scroll to the top of the document
+
+const btnTop = document.querySelector ('#myBtn');
+  btnTop.addEventListener("click", topFunction);
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-document.addEventListener("click", topFunction);
+
 
 // CONTACT BTN
 const btnContact = document.querySelector("#page-btn2 .btn-modal");
