@@ -13,15 +13,15 @@
   <link href="assets/img/Logo_KAstudio_claro.svg" rel="icon" type="image/x-icon">
 </head>
 <body class="bodyphtography">
-    <header class="container">
-        <div class="row g-0 position-relative">
+    <header>
+        <div class="row g-0 position-relative z-3">
             <nav class="w-100 navbar navbar-expand-lg  my-background-color position-absolute top-0 start-50 translate-middle-x p-4">
                 <div class="container-fluid navigation">
                     <a href="index.html" class="logo" aria-label="back to home">
                         <img src="assets/img/Logo_KAstudio_claro.svg" alt="logo" width="80" height="29" aria-hidden="true" decoding="async">
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                    <button class="navbar-toggler nt-css" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon nt-css-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -36,7 +36,7 @@
                             <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Categories
                             </a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu dropdown-css">
                             <li><a class="dropdown-item" href="#">Photography</a></li>
                             <li><a class="dropdown-item" href="#">Graphic Design</a></li>
                             <li><hr class="dropdown-divider"></li>
@@ -47,11 +47,35 @@
                             <a class="nav-link text-white" href="#">Inquiry</a>
                         </li>
                         <li class="btn-navbar nav-item x-2 ">
-                            <a class="nav-link disabled text-white" aria-disabled="true">Socials</a>
+                            <a class="nav-link text-white" aria-disabled="true">Socials</a>
                         </li>
                         </ul>
-                        
+                        <div id="nav-btn">
+                            <button type="button" class="btn btn-contact">Contact</button>
 
+                            <div id="modalWindow">
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <div class="container ">
+                                        <h2>Contáctanos</h2>
+                                        <form action="">
+                                        <div class="form-group">
+                                            <label for="email">Email:</label>
+                                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="text">Proposal:</label>
+                                            <input type="text" class="form-control" id="text-form" placeholder="Enter your proposal" name="pwd">
+                                        </div>
+                                        <div class="checkbox">
+                                            <label><input type="checkbox" name="remember"> Recibe nuestra newsletter!</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-default">Submit</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -69,37 +93,11 @@
                 </div>
             </nav>
         </div>
-     
     </header>
-                        <div id="nav-btn">
-                            <button type="button" class="btn btn-contact">Contact</button>
-
-                            <div id="modalWindow">
-                                <div class="modal-content">
-                                    <span class="close">&times;</span>
-                                    <div class="container ">
-                                        <h2>Contáctanos</h2>
-                                        <form action="/action_page.php">
-                                        <div class="form-group">
-                                            <label for="email">Email:</label>
-                                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="text">Proposal:</label>
-                                            <input type="text" class="form-control" id="text-form" placeholder="Enter your proposal" name="pwd">
-                                        </div>
-                                        <div class="checkbox">
-                                            <label><input type="checkbox" name="remember"> Recibe nuestra newsletter!</label>
-                                        </div>
-                                        <button type="submit" class="btn btn-default">Submit</button>
-                                        </form>
-                                    </div>
-                                    <button>Accept</button>
-                                </div>
-                            </div>
-                        </div>
+        
+                             
    
-    <section class="container my-5">
+    <section class="container my-5 card-cont">
         <div class="text-center mb-4">
             <h1 class="section-title">Photography</h1>
         </div>
@@ -113,7 +111,7 @@
                 </div>
                 <div class="card-body">
                     <h2 class="title">Madrid Brutalista</h2>
-                    <p class="description">Este proyecto fotográfico se centra en el estilo arquitectónico brutalista que marcó una era en el desarrollo urbano de Madrid durante las décadas de 1950 a 1970. A través de las diferentes perspectivas, podemos...</p>
+                    <p class="description">This photographic project focuses on the brutalist architectural style that marked an era in the urban development of Madrid during the 1950s to 1970s. Through the different perspectives, we can...</p>
                 </div>
                 </div>
             </div>
@@ -124,8 +122,8 @@
                     <a href="404.html"><button>See More</button></a>
                 </div>
                 <div class="card-body">
-                    <h2 class="title">Mundos Paralelos MBFW</h2>
-                    <p class="description">En el marco de la Mercedes-Benz Fashion Week, el desfile "Mundos Paralelos" presentó una colección inspirada en la convergencia de lo real y lo surrealista, con siluetas y texturas que evocaban universos opuestos...</p>
+                    <h2 class="title">Parallel Worlds MBFW</h2>
+                    <p class="description">As part of Mercedes-Benz Fashion Week, the “Mundos Paralelos” fashion show presented a collection inspired by the convergence of the real and the surreal, with silhouettes and textures that evoked opposite universes...</p>
                 </div>
                 </div>
             </div>
@@ -137,7 +135,7 @@
                 </div>
                 <div class="card-body">
                     <h2 class="title">BMW M4</h2>
-                    <p class="description">La sesión de fotos del BMW M4 fue un despliegue de adrenalina y elegancia en una ubicación industrial con un fondo de tonos metálicos y estructuras urbanas que resaltaban la silueta atlética del vehículo... </p>
+                    <p class="description">The BMW M4 photo shoot was a display of adrenaline and elegance in an industrial location with a backdrop of metallic tones and urban structures that highlighted the vehicle's athletic silhouette... </p>
                 </div>
                 </div>
             </div>
@@ -149,7 +147,7 @@
                 </div>
                 <div class="card-body">
                     <h2 class="title">Calvin Motors</h2>
-                    <p class="description">La sesión de fotos para Calvin Motors, realizada en un circuito de alto rendimiento, capturó la esencia de la velocidad y precisión que define a este equipo. Bajo el cielo despejado, los autos de Calvin Motors...</p>
+                    <p class="description">The photo shoot for Calvin Motors, held on a high-performance circuit, captured the essence of the speed and precision that defines this team. Under clear skies, the Calvin Motors cars...</p>
                 </div>
                 </div>
             </div>
@@ -161,7 +159,7 @@
                 </div>
                 <div class="card-body">
                     <h2 class="title">I20N Rallye</h2>
-                    <p class="description">Para la última edición de Autohebdo Sport, realizamos una sesión exclusiva con el Hyundai i20N, capturando su espíritu deportivo y su diseño agresivo en una serie de fotos que resaltan cada ángulo y detalle...</p>
+                    <p class="description">For the latest edition of Autohebdo Sport, we conducted an exclusive session with the Hyundai i20N, capturing its sporty spirit and aggressive design in a series of photos that highlight every angle and detail of the Hyundai i20N....</p>
                 </div>
                 </div>
             </div>
@@ -173,7 +171,7 @@
                 </div>
                 <div class="card-body">
                     <h2 class="title">Toyota GR86</h2>
-                    <p class="description">En una vibrante sesión de fotos en el circuito Kartpetania, capturamos la esencia del Toyota GR86 mientras demostraba sus habilidades de drift en cada curva cerrada. La sesión destacó la combinación de potencia y...</p>
+                    <p class="description">In a vibrant photo shoot at the Kartpetania circuit, we captured the essence of the Toyota GR86 as it demonstrated its drifting skills in every tight corner. The session highlighted the combination of power and...</p>
                 </div>
                 </div>
             </div>
@@ -185,8 +183,7 @@
                 </div>
                 <div class="card-body">
                     <h2 class="title">Windows Into Souls 1</h2>
-                    <p class="description">Utilizando entornos rosas y azules, junto con
-                        una figura vestida de negro como representación del yo, nace esta colección que explora los entresijos del mundo interior del fotógrafo. Con el azul se pretende representar u... </p>
+                    <p class="description">Using pink and blue environments, along with a figure dressed in black as a representation of the self, this collection is born to explore the intricacies of the inner world of the photographer. The blue is intended to represent an inner world of the... </p>
                 </div>
                 </div>
             </div>
@@ -198,8 +195,7 @@
                 </div>
                 <div class="card-body">
                     <h2 class="title">Windows into Souls 2</h2>
-                    <p class="description">Utilizando entornos rosas y azules, junto con
-                        una figura vestida de negro como representación del yo, nace esta colección que explora los entresijos del mundo interior del fotógrafo. Con el azul se pretende representar u...</p>
+                    <p class="description">Using pink and blue environments, along with a figure dressed in black as a representation of the self, this collection is born to explore the intricacies of the inner world of the photographer. The blue is intended to represent an inner world of the...</p>
                 </div>
                 </div>
             </div>
@@ -211,7 +207,7 @@
                 </div>
                 <div class="card-body">
                     <h2 class="title">Retro</h2>
-                    <p class="description">En una vibrante sesión de fotos en el circuito Kartpetania, capturamos la esencia del Toyota GR86 mientras demostraba sus habilidades de drift en cada curva cerrada. La sesión destacó la combinación de potencia y...</p>
+                    <p class="description">The vintage-inspired photoshoot captured the essence of a bygone era. With a backdrop of vibrant colors and nostalgic props, the models exuded timeless charm. From poodle skirts and leather jackets to classic cars and vintage...</p>
                 </div>
                 </div>
             </div>
@@ -257,7 +253,8 @@
             </div>
         </div>
     </footer>
-
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
 <script src="js\script_photo.js"></script>
 
