@@ -26,6 +26,8 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+document.addEventListener("click", topFunction);
+
 // CONTACT BTN
 const btnContact = document.querySelector("#page-btn2 .btn-modal");
         //console.log(btnModal);
