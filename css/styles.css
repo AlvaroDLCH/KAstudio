@@ -566,7 +566,7 @@ img {
       padding: var(--sectionPadding);
       overflow: hidden;
       position: relative;
-      z-index: 1;
+      z-index: 0;
       background-color: var(--headerColor);
     }
     #contact .container {
