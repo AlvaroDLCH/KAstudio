@@ -413,6 +413,19 @@ img {
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
+  #pToggle {
+    padding: 1rem;
+    background-color: var(--headerColor);
+    border-radius: 2rem;
+    border: 1px var(--primary) solid;
+    color: var(--primary);
+  }
+  #pToggle:hover {
+    padding: 1rem;
+    background-color: var(--primary);
+    color: var(--headerColor);
+    transition: 0.5s;
+  }
     #why-choose {
         text-align: center;
         padding: var(--sectionPadding);
@@ -519,8 +532,9 @@ img {
     
     #why-choose .intro-h3 {
         /* 20px - 25px */
-        font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
-        line-height: 1.2rem;
+        font-size: clamp(1.25rem, 2.5vw, 2rem);
+        font-weight: 600;
+        line-height: 2rem;
         margin: 0;
         margin-bottom: 1rem;
         color: var(--bodyTextColorWhite);
