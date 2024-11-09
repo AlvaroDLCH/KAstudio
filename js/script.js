@@ -63,7 +63,7 @@ const btnContact = document.querySelector("#page-btn2 .btn-modal");
 
         });
 
-// Custom cursor
+// CUSTOM CURSOR
 
 var cursor = document.querySelector('.cursor');
 var cursorinner = document.querySelector('.cursor2');
@@ -100,3 +100,40 @@ a.forEach(item => {
     cursor.classList.remove('hover');
   });
 })
+
+// jQuery - HIDE/REVEAL PARAGRAPH
+
+$(document).ready(function(){
+  console.log('jQuery cargado y enlazado');
+
+  //let paragraphs = document.querySelectorAll("p");      //en JS
+  let paragraphs = $(".intro-card-group p"); //En JQ
+  console.log(paragraphs);
+
+
+  // HIDE PARAGRAPHS
+
+  let btnToggle = $("#pToggle");
+  btnToggle.click(function(){
+
+      // let actualDisplay = paragraphs.css("display");
+      // console.log(actualDisplay);
+
+      // if (actualDisplay === "block"){
+      //     paragraphs.hide("hide");
+
+      // } else {
+      //     paragraphs.show("2000");
+
+      // }
+
+      // paragraphs.slideToggle(slow);
+      paragraphs.slideToggle(1000);
+
+
+  });
+  
+
+
+});
+
